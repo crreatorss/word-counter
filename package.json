@@ -1,0 +1,31 @@
+{
+  "name": "character-counter",
+  "displayName": "Character Counter",
+  "description": "Считает количество символов в выделенном тексте",
+  "version": "0.0.1",
+  "publisher": "your-name",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onCommand:extension.countCharacters"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.countCharacters",
+        "title": "Count Characters"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^24.4.0",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.2.0"
+  }
+}
